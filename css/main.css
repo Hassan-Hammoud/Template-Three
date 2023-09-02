@@ -1,0 +1,90 @@
+/* Start Global Rules  */
+
+:root {
+    --primary-color : #2196f3
+    --hover-color : #1787e0
+    /* --secondary-color : 
+    --accent-color : 
+    --text-color : 
+    --padding-section : */
+}
+
+* {
+    -webkit-box-sizing: border-box;
+  
+    -moz-box-sizing: border-box;
+  
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Small Screen  */
+
+@media (max-width: 767px) {
+.container {
+    width:750px ;
+}
+  }
+
+  /* Medium Screen  */
+  
+@media (max-width: 992px) {
+    .container {
+        width:970px ;
+    }
+      }
+
+ /* Large Screen  */
+
+
+@media (max-width: 1200px) {
+        .container {
+            width: 1170px ;
+        }
+          }
+
+
+/* End Global Rules  */
+
+/* Start Components */
+
+.special-heading {
+
+}
+
+.special-heading h2 {
+    
+}
+
+.special-heading {
+    
+}
+
+/* End Components */
