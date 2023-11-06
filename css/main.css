@@ -5,7 +5,7 @@
   --secondary-color: #2196f3;
   --hover-color: #1787e0;
   --background-section: #ececec;
-  --text-color: #661.8;
+  --text-color: #777;
   --transition-time: 0.4s;
   --section-padding: 40px 0;
   --section-margin: 40px 0;
@@ -589,7 +589,7 @@ header .mega-menu .mega-links li > a > i {
   border-style: solid;
   border-width: 0px 0px 170px 900px;
   border-color: transparent transparent white transparent;
-  bottom: 0px;
+  bottom: -2px;
   right: 0;
   z-index: 2;
   transition: var(--transition-time);
@@ -657,82 +657,133 @@ header .mega-menu .mega-links li > a > i {
   font-size: 22px;
   font-weight: bold;
   padding: 10px 30px;
-  border-radius:6px;
-  transition: var(--transition-time)
+  border-radius: 6px;
+  transition: var(--transition-time);
 }
-
-
 
 .features .quality .image-holder::after {
-background-color:hsla(3, 90%, 58%, 0.4)
+  background-color: hsla(3, 90%, 58%, 0.4);
 }
 
-.features .quality h2::after  {
-background-color: #f44036;
+.features .quality h2::after {
+  background-color: #f44036;
 }
 
-
-.features .quality a  {
+.features .quality a {
   color: #f44036;
   border: 3px solid #f44036;
-  background:linear-gradient(to right, #f44036 50%, white 50%);
+  background: linear-gradient(to right, #f44036 50%, white 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-
 }
-
 
 /* Time*/
 
-
 .features .time .image-holder::after {
-  background-color:hsla(174, 100%, 29%, 0.4);
-  }
-  
-  .features .time h2::after  {
-  background-color: #009688;;
-  }
-  
-  
-  .features .time a  {
-    color: #009688;;
-    border: 3px solid #009688;
-    background:linear-gradient(to right, #009688 50%, white 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-  
-  }
-  
+  background-color: hsla(174, 100%, 29%, 0.4);
+}
 
-  
+.features .time h2::after {
+  background-color: #009688;
+}
+
+.features .time a {
+  color: #009688;
+  border: 3px solid #009688;
+  background: linear-gradient(to right, #009688 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
 /* passion */
-  .features .passion .image-holder::after {
-    background-color:hsla(3, 90%, 58%, 0.6)
-    }
-    
-    .features .passion h2::after  {
-    background-color: #f44036;
-    }
-    
-    
-    .features .passion a {
-      color: #f44036;
-      border: 3px solid #f44036;
-      background:linear-gradient(to right, #f44036 50%, white 50%);
-      background-size: 200% 100%;
-      background-position: right bottom;
-    
-    }
-    
-    .features .box:hover a{
-    color: var(--primary-color);
-    background-position: left bottom;
-    
-    }
-    
+.features .passion .image-holder::after {
+  background-color: hsla(3, 90%, 58%, 0.6);
+}
 
+.features .passion h2::after {
+  background-color: #f44036;
+}
+
+.features .passion a {
+  color: #f44036;
+  border: 3px solid #f44036;
+  background: linear-gradient(to right, #f44036 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.features .box:hover a {
+  color: var(--primary-color);
+  background-position: left bottom;
+}
 
 /* End features  */
+
+/* Start Testimonials  */
+.test-user {
+  padding: var(--section-padding);
+  margin: var(--section-margin);
+  background-color: var(--background-section);
+  position: relative;
+}
+
+.test-user .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.test-user .test-box {
+  position: relative;
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.test-user .test-box img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  border-radius: 50%;
+  border: 10px solid var(--background-section);
+}
+
+
+.test-user .test-box h3 {
+  margin: 0 0 10px 0;
+}
+
+.test-user .test-box .test-title {
+  color: var(--text-color);
+}
+
+.test-user .test-box .rate {
+  display: flex;
+  margin: 15px 0;
+}
+
+
+.test-user .test-box .rate i {
+}
+.test-user .test-box .rate .filled {
+  color:#ffc107;
+}
+
+.test-user .test-box .rate .no-filled {
+  color:var(--text-color);
+}
+
+.test-user .test-box p {
+  color: var(--text-color);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* End Testimonials  */
 
 /* Start Animations  */
 @keyframes up-and-down {
@@ -804,9 +855,6 @@ background-color: #f44036;
     width: 200%;
     height: 200%;
   }
-
-
-
 }
 
 /* End Animations  */
