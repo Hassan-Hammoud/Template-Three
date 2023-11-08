@@ -856,7 +856,7 @@ header .mega-menu .mega-links li > a > i {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .team .team-social a i {
@@ -871,7 +871,7 @@ header .mega-menu .mega-links li > a > i {
 }
 
 .team .team-info {
-  padding-left:60px ;
+  padding-left: 60px;
 }
 
 .team .team-info h3 {
@@ -903,14 +903,14 @@ header .mega-menu .mega-links li > a > i {
 
 .services .service-box {
   background-color: var(--primary-color);
-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-padding: 20px 0 0;
-counter-increment: services;
-transition: var(--transition-time);
-position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  padding: 20px 0 0;
+  counter-increment: services;
+  transition: var(--transition-time);
+  position: relative;
 }
 
-.services .service-box::before{
+.services .service-box::before {
   content: "";
   position: absolute;
   width: 0;
@@ -919,27 +919,25 @@ position: relative;
   left: 50%;
   transform: translate(-50%);
   background-color: var(--secondary-color);
-transition: var(--transition-time);
-
+  transition: var(--transition-time);
 }
 
 .services .service-box:hover {
   transform: translateY(-20px);
 }
 
-.services .service-box:hover::before{
-width: 100%;
+.services .service-box:hover::before {
+  width: 100%;
 }
 
 .services .service-icon {
-text-align: center;
-margin: 30px auto;
+  text-align: center;
+  margin: 30px auto;
 }
 
 .services .service-icon i {
   font-size: 60px;
-  color:#777;
-
+  color: #777;
 }
 
 .services .service-icon h2 {
@@ -952,9 +950,7 @@ margin: 30px auto;
   background-color: var(--background-section);
   margin-top: 40px;
   text-align: right;
-
 }
-
 
 .services .details::before {
   content: "0" counter(services);
@@ -971,14 +967,13 @@ margin: 30px auto;
   align-items: center;
   justify-content: center;
   padding-right: 18px;
-
 }
 
-.services .details::after{
+.services .details::after {
   content: "";
   position: absolute;
   width: 50px;
-  height:calc(100% );
+  height: calc(100%);
   background-color: #777;
   top: 0;
   left: 80px;
@@ -986,15 +981,73 @@ margin: 30px auto;
 }
 
 .services .details a {
-color: var(--secondary-color);
-z-index: 100;
+  color: var(--secondary-color);
+  z-index: 100;
 }
 /* End Services  */
 
-/* Start Animations  */
-@keyframes identifier {
+/* Start Skills */
+.our-skills {
+  padding: var(--section-padding);
+  margin: var(--section-margin);
 }
 
+.our-skills .container {
+display: flex;
+align-items: center;
+}
+
+.our-skills img {
+
+}
+
+@media(max-width:992px){
+  .our-skills img {
+display: none;
+  }
+}
+
+
+.our-skills .skills {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.our-skills .skills .skill {
+
+}
+
+.our-skills .skills .skill h3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.our-skills .skills .skill h3 span{
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 3px 5px;
+  font-size: 12px;
+  color: var(--secondary-color);
+}
+.our-skills .skills .progress {
+  width: 100%;
+  height: 30px;
+  background-color: #ccc;
+  position: relative;
+}
+
+
+.our-skills .skills .progress span {
+position: absolute;
+height: 100%;
+background-color: var(--secondary-color);
+top: 0;
+left: 0;
+}
+/* End Skills */
+
+/* Start Animations  */
 @keyframes up-and-down {
   0%,
   100% {
