@@ -1381,7 +1381,7 @@ header .mega-menu .mega-links li > a > i {
   position: absolute;
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  padding: 10px 10px 35px 10px ;
+  padding: 10px 10px 35px 10px;
   writing-mode: vertical-lr;
   right: 20px;
   top: 0;
@@ -1399,8 +1399,6 @@ header .mega-menu .mega-links li > a > i {
   border-style: solid;
   border-width: 20px;
 }
-
-
 
 .pricing .box-pricing .top-pricing {
   padding: 10px;
@@ -1420,10 +1418,6 @@ header .mega-menu .mega-links li > a > i {
 .pricing .top-pricing img {
   width: 100px;
   margin: 5px;
-}
-
-.pricing .top-pricing p {
-  /* margin: 0; */
 }
 
 .pricing .top-pricing p span {
@@ -1489,6 +1483,105 @@ header .mega-menu .mega-links li > a > i {
   background-color: var(--secondary-color);
 }
 /* End Pricing */
+
+/* Start Top Video  */
+.videos {
+  padding: var(--section-padding);
+  margin: var(--section-margin);
+  position: relative;
+}
+
+.videos .container .holder{
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-section);
+  border: 1px solid #ddd;
+}
+
+@media (max-width:992px){
+.videos .container .holder {
+  flex-direction: column;
+}
+}
+
+.videos .videos-titles {
+  min-width: 300px;
+  background-color: var(--primary-color);
+
+}
+
+.videos .videos-titles .top-video {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+
+  background-color:#f6f5f5;
+
+}
+
+.videos .top-video h3 {
+}
+
+.videos .top-video i {
+}
+
+.videos .videos-titles .videos-name {
+}
+
+.videos .videos-titles .videos-name li {
+  padding: 20px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid #ddd;
+  transition: var(--transition-time);
+  
+}
+
+.videos .videos-titles .videos-name li:hover {
+background-color: #f6f5f5;
+}
+
+.videos  .videos-name li > a {
+  color: black;
+padding-bottom: 10px;
+transition: var(--transition-time);
+}
+
+
+.videos  .videos-name li:hover > a {
+  color: var(--secondary-color);
+}
+
+
+.videos .videos-titles .videos-name li span {
+  color: var(--text-color);
+}
+
+.videos .video-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.videos .video-img img {
+  max-width: 100%;
+}
+
+.videos .video-img .video-brief {
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin-top: 10px;
+
+}
+
+.videos .video-img .video-brief p {
+}
+
+/* Start Top Video  */
 
 /* Start Animations  */
 @keyframes up-and-down {
@@ -1563,5 +1656,3 @@ header .mega-menu .mega-links li > a > i {
 }
 
 /* End Animations  */
-
-
