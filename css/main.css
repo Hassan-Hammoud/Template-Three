@@ -401,7 +401,7 @@ header .mega-menu .mega-links li > a > i {
 
 .landing-page .go-down {
   position: absolute;
-  bottom: 40px;
+  bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 30px;
