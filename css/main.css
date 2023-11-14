@@ -298,6 +298,11 @@ header .mega-menu .mega-links li:not(:last-child) {
   header .mega-menu .mega-links:first-of-type li:last-child {
     border-bottom: 1px solid #ddd;
   }
+  header .mega-menu .mega-links li {
+    font-size: 15px;
+  padding: 18px 0;
+
+  }
 }
 
 header .mega-menu .mega-links li > a {
@@ -309,6 +314,13 @@ header .mega-menu .mega-links li > a {
 header .mega-menu .mega-links li > a > i {
   font-size: 20px;
   margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  header .mega-menu .mega-links li > a > i {
+    font-size: 18px;
+  }
+  
 }
 
 /* End mega menu  */
