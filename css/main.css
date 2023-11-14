@@ -125,12 +125,12 @@ a {
   animation: left-move 0.5s linear forwards;
 }
 
-/* @media(max-width:767px) {
+@media(max-width:767px) {
   .special-heading {
-    font-size: 18px;
+    font-size: 20px;
     margin: 30px auto;
   }
-} */
+}
 
 /* End Components */
 
@@ -194,7 +194,7 @@ header .main-nav > li > a {
 
 @media (max-width: 767px) {
   header .main-nav > li > a {
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
     height: 40px;
   }
@@ -344,7 +344,7 @@ header .mega-menu .mega-links li > a > i {
 
 .landing-page .text-landing {
   flex: 1;
-  /* max-width: 500px; */
+
 }
 
 @media (max-width: 992px) {
@@ -401,7 +401,7 @@ header .mega-menu .mega-links li > a > i {
 
 .landing-page .go-down {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 30px;
@@ -424,6 +424,14 @@ header .mega-menu .mega-links li > a > i {
   padding: var(--section-padding);
   margin: var(--section-margin);
   position: relative;
+}
+
+@media(max-width:767px) {
+  .articles {
+  padding: 10px 0;
+  margin: 10px 0;
+  position: relative;
+}
 }
 
 .articles .container {
@@ -498,6 +506,15 @@ header .mega-menu .mega-links li > a > i {
   background-color: var(--background-section);
 }
 
+
+@media(max-width:767px) {
+  .gallery {
+  padding: 20px 0;
+  margin: 20px 0;
+  position: relative;
+}
+}
+
 .gallery .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -548,6 +565,14 @@ header .mega-menu .mega-links li > a > i {
   padding: var(--section-padding);
   margin: var(--section-margin);
   position: relative;
+}
+
+@media(max-width:767px) {
+  .features {
+  padding: 20px 0;
+  margin: 20px 0;
+  position: relative;
+}
 }
 
 .features .container {
@@ -727,6 +752,14 @@ header .mega-menu .mega-links li > a > i {
   position: relative;
 }
 
+@media(max-width:767px) {
+  .test-user {
+  padding: 20px 0 ;
+  margin: 20px 0 ;
+  position: relative;
+}
+}
+
 .test-user .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -785,6 +818,14 @@ header .mega-menu .mega-links li > a > i {
 .team {
   padding: var(--section-padding);
   margin: var(--section-margin);
+}
+
+@media(max-width:767px) {
+  .team {
+  padding: 20px 0 ;
+  margin: 20px 0 ;
+  position: relative;
+}
 }
 
 .team .container {
@@ -895,6 +936,14 @@ header .mega-menu .mega-links li > a > i {
   background-color: var(--background-section);
 }
 
+@media(max-width:767px) {
+  .services {
+  padding: 20px 0 ;
+  margin: 20px 0 ;
+  position: relative;
+}
+}
+
 .services .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -992,13 +1041,20 @@ header .mega-menu .mega-links li > a > i {
   margin: var(--section-margin);
 }
 
+@media(max-width:767px) {
+  .our-skills {
+  padding: 20px 0 ;
+  margin: 20px 0 ;
+  position: relative;
+}
+}
+
 .our-skills .container {
   display: flex;
   align-items: center;
 }
 
-.our-skills img {
-}
+
 
 @media (max-width: 992px) {
   .our-skills img {
@@ -1137,6 +1193,13 @@ header .mega-menu .mega-links li > a > i {
   padding: var(--section-padding);
   margin: var(--section-margin);
   position: relative;
+}
+
+@media(max-width:767px) {
+  .events {
+  padding: 20px 0 ;
+  margin: 20px 0 ;
+}
 }
 
 .events .left-dots {
@@ -1309,6 +1372,13 @@ header .mega-menu .mega-links li > a > i {
   margin: var(--section-margin);
   background-color: var(--background-section);
   position: relative;
+}
+
+@media(max-width:767px) {
+  .pricing {
+  padding: 20px 0 ;
+  margin: 20px 0 ;
+}
 }
 
 .pricing .left-dots {
@@ -1569,9 +1639,16 @@ header .mega-menu .mega-links li > a > i {
   background-image: url("https://i.ibb.co/vk1T1Ft/stats.jpg");
   background-size: cover;
   padding: var(--section-padding);
-  /* margin: var(--section-margin); */
+ 
   position: relative;
   min-height: 300px;
+}
+
+@media(max-width:767px) {
+  .stats {
+  padding: 20px 0 ;
+  margin: 20px 0 ;
+}
 }
 
 .stats::before {
@@ -2039,7 +2116,7 @@ footer p {
 }
 
 /* End Animations  */
-.spikes {
+/* .spikes {
   position: relative;
   background: white;
   height: 0vh;
@@ -2057,4 +2134,4 @@ footer p {
   background-size: 40px 100%;
   background-image: linear-gradient(135deg, white 25%,transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
   background-position: 0 0;
-}
+} */
