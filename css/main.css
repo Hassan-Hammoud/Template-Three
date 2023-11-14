@@ -1696,11 +1696,10 @@ header .mega-menu .mega-links li > a > i {
   z-index: -1;
 }
 
-
-@media(max-width:992px) {
-  .discount .have-disc{
+@media (max-width: 992px) {
+  .discount .have-disc {
     flex-basis: 100%;
-  } 
+  }
 }
 
 .discount .info {
@@ -1731,11 +1730,10 @@ header .mega-menu .mega-links li > a > i {
   flex-basis: 50%;
 }
 
-
-@media(max-width:992px) {
-  .discount .request{
+@media (max-width: 992px) {
+  .discount .request {
     flex-basis: 100%;
-  } 
+  }
 }
 
 .discount .request h2 {
@@ -1784,6 +1782,179 @@ header .mega-menu .mega-links li > a > i {
 }
 
 /* End Discount  */
+
+/* Start footer  */
+footer {
+  padding-top: 70px;
+  background-color: #191919;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+
+footer .box h1 {
+  margin: 0 0 20px;
+  font-size: 45x;
+  color: var(--primary-color);
+}
+
+footer .social-links {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  footer .social-links {
+    justify-content: center;
+  }
+}
+
+footer .social-links a {
+  background-color: #313131;
+  color: #898989;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  /* padding: 10px 15px; */
+  margin-right: 10px;
+  transition: var(--transition-time);
+}
+
+footer .social-links a.linkedin:hover {
+  background-color: #b24020;
+}
+
+footer .social-links a.github:hover {
+  background-color: #6e5494;
+}
+
+footer .social-links a.instagram:hover {
+  background-color: #e1306c;
+}
+
+footer .social-links a.facebook:hover {
+  background-color: #1877f2;
+}
+
+footer .social-links i {
+  font-size: 25px;
+  transition: var(--transition-time);
+}
+
+footer .social-links a:hover i {
+  color: var(--primary-color);
+}
+
+footer .hssn-text {
+  color: var(--text-color);
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* box 2 */
+
+
+footer .links li {
+  transition: var(--transition-time);
+  padding: 15px 0;
+  /* margin-bottom: 20px; */
+}
+
+footer .links li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+footer .links li:hover {
+  padding-left: 10px;
+}
+
+footer .links li a {
+  color: var(--text-color);
+  transition: var(--transition-time);
+}
+
+footer .links li:hover a {
+  color: var(--primary-color);
+}
+
+footer .links li i {
+  color: var(--secondary-color);
+  margin-right: 10px;
+  /* font-size: 18px; */
+}
+
+/* box 3 */
+
+footer .location {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  footer .location {
+    flex-direction: column;
+  }
+}
+
+footer .location i {
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+footer .location p {
+  line-height: 1.6;
+}
+
+footer .location p span {
+  display: block;
+}
+
+/* box 4  */
+footer .footer-images {
+  margin-top: 10px;
+}
+
+
+footer .footer-images img {
+  width: 78px;
+  border: 3px solid var(--primary-color);
+  margin: 2px;
+}
+
+footer .copy {
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer .copy p {
+  display: block;
+  padding: 25px 0;
+  border-top: 1px solid #ddd;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+
+footer p {
+  margin: 5px 0;
+}
+/* End footer  */
 
 /* Start Animations  */
 @keyframes up-and-down {
@@ -1857,13 +2028,33 @@ header .mega-menu .mega-links li > a > i {
   }
 }
 
-@keyframes change-background{
-0% , 100% {
-  background-image: url("https://i.ibb.co/tsPDJh9/discount-background1.jpg");
-}
-50% {
-  background-image: url("https://i.ibb.co/LCHJpCW/discount-background2.jpg");
-}
+@keyframes change-background {
+  0%,
+  100% {
+    background-image: url("https://i.ibb.co/tsPDJh9/discount-background1.jpg");
+  }
+  50% {
+    background-image: url("https://i.ibb.co/LCHJpCW/discount-background2.jpg");
+  }
 }
 
 /* End Animations  */
+.spikes {
+  position: relative;
+  background: white;
+  height: 0vh;
+}
+
+.spikes::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 50px;
+  background-size: 40px 100%;
+  background-image: linear-gradient(135deg, white 25%,transparent 25%), linear-gradient(225deg, white 25%, transparent 25%);
+  background-position: 0 0;
+}
