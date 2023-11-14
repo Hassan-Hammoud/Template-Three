@@ -25,7 +25,6 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -147,7 +146,7 @@ header {
 
 header .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   flex-wrap: wrap;
@@ -1565,6 +1564,7 @@ header .mega-menu .mega-links li > a > i {
 
 /* End Top Video  */
 
+/* Start Stats  */
 .stats {
   background-image: url("https://i.ibb.co/vk1T1Ft/stats.jpg");
   background-size: cover;
@@ -1592,7 +1592,7 @@ header .mega-menu .mega-links li > a > i {
 .stats .container h1 {
   color: black;
   font-size: 40px;
-  margin: 40px auto 50px ;
+  margin: 40px auto 50px;
   width: fit-content;
 }
 
@@ -1614,7 +1614,6 @@ header .mega-menu .mega-links li > a > i {
 .stats .content .box-stats:hover {
   opacity: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-
 }
 
 .stats .content .box-stats::before,
@@ -1661,6 +1660,130 @@ header .mega-menu .mega-links li > a > i {
   font-style: italic;
   font-weight: bold;
 }
+
+/* End Stats  */
+
+/* Start Discount  */
+.discount {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.discount .have-disc {
+  flex-basis: 50%;
+  background-image: url("https://i.ibb.co/tsPDJh9/discount-background1.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  color: var(--primary-color);
+  animation: change-background 10s linear infinite;
+}
+
+.have-disc::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2195f3d0;
+  z-index: -1;
+}
+
+
+@media(max-width:992px) {
+  .discount .have-disc{
+    flex-basis: 100%;
+  } 
+}
+
+.discount .info {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.discount .info h2 {
+  font-size: 40px;
+}
+
+.discount .have-disc p {
+  line-height: 1.8;
+  font-size: 18px;
+  max-width: 500px;
+}
+
+.discount .have-disc img {
+  width: 300px;
+  max-width: 100%;
+}
+
+.discount .request {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+
+@media(max-width:992px) {
+  .discount .request{
+    flex-basis: 100%;
+  } 
+}
+
+.discount .request h2 {
+  color: black;
+  font-size: 40px;
+}
+
+.discount .request form .input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: #f6f5f5;
+  caret-color: var(--secondary-color);
+}
+
+.discount .request form .input:focus {
+  outline: none;
+}
+.discount .request form .input::placeholder {
+  color: var(--text-color);
+}
+
+.discount .request form textarea {
+  resize: none;
+  height: 200px;
+}
+
+.discount .request form .send-disc {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--secondary-color);
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: var(--transition-time);
+}
+
+.discount .request form .send-disc:hover {
+  background-color: var(--hover-color);
+}
+
+/* End Discount  */
 
 /* Start Animations  */
 @keyframes up-and-down {
@@ -1732,6 +1855,15 @@ header .mega-menu .mega-links li > a > i {
     width: 200%;
     height: 200%;
   }
+}
+
+@keyframes change-background{
+0% , 100% {
+  background-image: url("https://i.ibb.co/tsPDJh9/discount-background1.jpg");
+}
+50% {
+  background-image: url("https://i.ibb.co/LCHJpCW/discount-background2.jpg");
+}
 }
 
 /* End Animations  */
