@@ -48,7 +48,7 @@ a {
 
 /* Small Screen  */
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .container {
     width: 750px;
   }
@@ -1241,14 +1241,12 @@ header .mega-menu .mega-links li > a > i {
   max-width: 450px;
 }
 
-.events .content .text-time {
-}
 
 .events .text-time .calender {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   margin: 20px 0;
 }
 
@@ -1267,7 +1265,7 @@ header .mega-menu .mega-links li > a > i {
 }
 .events .calender .time span:first-child {
   color: var(--secondary-color);
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 30px;
   font-weight: bold;
   padding: 10px;
@@ -1289,7 +1287,7 @@ header .mega-menu .mega-links li > a > i {
 }
 
 .events .text-time h2 {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .events .text-time p {
